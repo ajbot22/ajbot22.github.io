@@ -1,0 +1,196 @@
+/* Overall page styling */
+body {
+    background-color: #2e0f38;
+    font-family: "Georgia", cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff; /* White text for better readability */
+}
+
+/* Header section */
+#header {
+    background-color: #8351a8;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    color: #b45dbb; /* Heading color */
+}
+
+/* About Me section */
+#about-me {
+    background-color: #4d7b93;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+}
+
+/* Course section */
+#courses {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1a2c54;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
+}
+
+.course-item {
+    background-color: #8351a8;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+h2, h3 {
+    font-size: large;
+    color: #ffffff;
+}
+
+/* Skills table */
+#skills-table {
+    border: dashed 2px #b45dbb;
+    background-color: #4d7b93;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+}
+
+#skills-table td {
+    border: solid 1px #b45dbb;
+    padding: 10px;
+    color: #ffffff;
+}
+
+/* Navigation links */
+.nav {
+    color: #ffffff;
+    background-color: #1a2c54;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap; /* Prevents text from wrapping inside the box */
+    flex-grow: 1; /* Allows each nav link to grow evenly */
+}
+
+/* Flex container for navigation links */
+#links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between each link */
+    flex-wrap: wrap; /* Allows the nav links to wrap to the next line if they overflow */
+    margin-top: 20px;
+    width: 100%; /* Ensures the nav links don't exceed the width of the container */
+}
+/* Container for address details */
+address, footer {
+    display: flex;
+    justify-content: center; /* Distributes space between items */
+    gap: 20px; /* Space between phone number and email address */
+    flex-wrap: wrap; /* Allows items to wrap if there's not enough space */
+    padding: 20px;
+    background-color: #4d7b93;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
+    margin: 20px;
+}
+/* Container for projects and descriptions */
+.projectsdiv {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #2e0f38;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* Projects links styling */
+.projtable {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+}
+
+.projtable .nav {
+    background-color: #8351a8;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+}
+
+/* Description text styling */
+.classtable {
+    flex: 2;
+    background-color: #4d7b93;
+    padding: 15px;
+    border-radius: 10px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column; /* Stack descriptions vertically */
+    gap: 10px; /* Space between each description */
+}
+
+/* Description text item styling */
+.description {
+    padding: 10px;
+    background-color: #8351a8; /* Matching background color for consistency */
+    border-radius: 8px;
+}
+/* Courses table styling */
+#courses-table {
+    width: 100%; /* Ensure table takes full width */
+    border-collapse: collapse; /* Remove spacing between borders */
+    margin-top: 20px; /* Space above the table */
+}
+
+#courses-table td {
+    padding: 10px; /* Space inside each cell */
+    border: 1px solid #5c1661; /* Light border for each cell */
+    text-align: center; /* Center-align text */
+    background-color: #b45dbb; /* White background for better readability */
+    font-size: large; /* Adjust font size as needed */
+}
+
+/* Optional: Add alternating row colors for better readability */
+#courses-table tr:nth-child(odd) td {
+    background-color: #a15ba7; /* Light grey for odd rows */
+}
+.no-bullets {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.no-bullets li {
+    padding: 5px 0; /* Space between list items */
+    border-bottom: 1px solid #ddd; /* Optional: Add border between items for separation */
+}
